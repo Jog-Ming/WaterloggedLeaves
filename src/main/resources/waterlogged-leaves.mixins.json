@@ -3,7 +3,11 @@
 	"package": "rms.mixin",
 	"compatibilityLevel": "JAVA_16",
 	"mixins": [
-		"ExampleMixin"
+		"ThreadedAnvilChunkStorageMixin",
+		"EntityAccessor",
+		"IdListMixin",
+		"LeavesBlockMixin",
+		"WorldChunkMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
