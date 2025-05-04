@@ -4,6 +4,7 @@ import com.google.common.collect.Sets;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.network.packet.s2c.play.EntitiesDestroyS2CPacket;
@@ -17,7 +18,6 @@ import net.minecraft.server.world.EntityTrackingListener;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
-import rms.mixin.EntityAccessor;
 
 import java.util.Random;
 import java.util.Set;
@@ -28,10 +28,10 @@ public final class ClientWater {
     private static final DataTracker DATA_TRACKER = new DataTracker(null);
 
     static {
-        DATA_TRACKER.startTracking(EntityAccessor.getNoGravity(), true);
+        DATA_TRACKER.startTracking(Entity.NO_GRAVITY, true);
     }
 
-    private final int id = EntityAccessor.getCurrentId().incrementAndGet();
+    private final int id = Entity.CURRENT_ID.incrementAndGet();
     private final double x;
     private final double y;
     private final double z;

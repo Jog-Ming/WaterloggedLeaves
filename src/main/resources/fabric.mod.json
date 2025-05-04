@@ -18,6 +18,7 @@
 	"mixins": [
 		"waterlogged-leaves.mixins.json"
 	],
+	"accessWidener": "waterlogged-leaves.accesswidener",
 	"depends": {
 		"fabricloader": ">=0.14.25",
 		"minecraft": "~1.17.1",
