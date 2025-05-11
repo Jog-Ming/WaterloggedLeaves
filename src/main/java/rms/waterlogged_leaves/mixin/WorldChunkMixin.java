@@ -1,4 +1,4 @@
-package rms.mixin;
+package rms.waterlogged_leaves.mixin;
 
 import it.unimi.dsi.fastutil.ints.IntArraySet;
 import it.unimi.dsi.fastutil.ints.IntSet;
@@ -23,8 +23,8 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import rms.WaterloggedLeavesChangeListener;
-import rms.WaterloggedLeavesTracker;
+import rms.waterlogged_leaves.WaterloggedLeavesChangeListener;
+import rms.waterlogged_leaves.WaterloggedLeavesTracker;
 
 import java.util.function.Consumer;
 
@@ -45,6 +45,7 @@ public abstract class WorldChunkMixin implements WaterloggedLeavesTracker {
 
     @SuppressWarnings("AddedMixinMembersNamePattern")
     public void setWaterloggedLeavesChangeListener(final WaterloggedLeavesChangeListener waterloggedLeavesChangeListener) {
+        System.out.println("setWaterloggedLeavesChangeListener");
         this.waterloggedLeavesChangeListener = waterloggedLeavesChangeListener;
     }
 

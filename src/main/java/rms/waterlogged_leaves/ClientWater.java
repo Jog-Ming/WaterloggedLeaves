@@ -1,4 +1,4 @@
-package rms;
+package rms.waterlogged_leaves;
 
 import com.google.common.collect.Sets;
 import net.minecraft.block.Block;

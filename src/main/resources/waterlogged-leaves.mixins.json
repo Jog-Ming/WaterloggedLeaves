@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "rms.mixin",
+	"package": "rms.waterlogged_leaves.mixin",
 	"compatibilityLevel": "JAVA_16",
 	"mixins": [
 		"ThreadedAnvilChunkStorageMixin",

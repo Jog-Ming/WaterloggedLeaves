@@ -1,4 +1,4 @@
-package rms.mixin;
+package rms.waterlogged_leaves.mixin;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

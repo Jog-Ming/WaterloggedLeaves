@@ -1,4 +1,4 @@
-package rms;
+package rms.waterlogged_leaves;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.util.math.BlockPos;

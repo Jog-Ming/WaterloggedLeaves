@@ -1,4 +1,4 @@
-package rms.mixin;
+package rms.waterlogged_leaves.mixin;
 
 import it.unimi.dsi.fastutil.ints.IntArrayList;
 import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap;
@@ -17,9 +17,9 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import rms.ClientWater;
-import rms.WaterloggedLeavesChangeListener;
-import rms.WaterloggedLeavesTracker;
+import rms.waterlogged_leaves.ClientWater;
+import rms.waterlogged_leaves.WaterloggedLeavesChangeListener;
+import rms.waterlogged_leaves.WaterloggedLeavesTracker;
 
 import java.util.stream.Stream;
 
