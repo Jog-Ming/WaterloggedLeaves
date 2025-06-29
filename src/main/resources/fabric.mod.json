@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
-	"id": "waterlogged-leaves",
-	"version": "${version}",
+	"id": "$id",
+	"version": "$version",
 	"name": "Waterlogged Leaves",
 	"description": "A purely server-side mod that adds waterlogged leaves.",
 	"authors": [
@@ -13,15 +13,14 @@
 		"sources": "https://github.com/RMS-Server/WaterloggedLeaves"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/waterlogged-leaves/icon.png",
+	"icon": "assets/$id/icon.png",
 	"environment": "server",
 	"mixins": [
-		"waterlogged-leaves.mixins.json"
+		"${id}.mixins.json"
 	],
-	"accessWidener": "waterlogged-leaves.accesswidener",
+	"accessWidener": "${id}.accesswidener",
 	"depends": {
-		"fabricloader": ">=0.14.25",
-		"minecraft": "~1.17.1",
-		"java": ">=16"
+		"fabricloader": ">=$loader_version",
+		"minecraft": "$minecraft_version"
 	}
 }
